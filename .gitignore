@@ -1,3 +1,7 @@
+Dependencies/python-embed-amd64/
+
+#GITHUB PYTHON TEMPLATE FOLLOWS
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
