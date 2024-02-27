@@ -39,6 +39,10 @@ Window {
 """
 
 if __name__ == "__main__":
+    """
+    This script creates a simple Qt application that displays a window with a text label and a button.
+    The text label displays a random string from a predefined list when the button is clicked.
+    """
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
     engine.loadData(QML.encode('utf-8'))
@@ -47,3 +51,8 @@ if __name__ == "__main__":
     exit_code = app.exec()
     del engine
     sys.exit(exit_code)
+
+
+def runBatchFile(BatchFile, *args):
+    import subprocess
+    subprocess.run([BatchFile, *args], shell=True)
